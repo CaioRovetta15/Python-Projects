@@ -21,5 +21,6 @@ def getMediaInfo(num_pages=1):
     return media_dict
 
 if __name__ == '__main__':
-    dic = getMediaInfo(1)
-    print(dic.keys())
+    dic = getMediaInfo(4)
+    for key, value in dic.items():
+        print(key, value, '\n')
