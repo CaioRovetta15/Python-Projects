@@ -1,6 +1,0 @@
-{
-    "files.associations": {
-        "*.world": "xml",
-        "string": "cpp"
-    }
-}
