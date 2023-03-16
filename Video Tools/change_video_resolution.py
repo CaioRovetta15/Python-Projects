@@ -1,19 +1,20 @@
+#!#!/usr/bin/env python3
 import cv2
 
 # Open the video file
-input_video = cv2.VideoCapture('input_video.mp4')
+input_video = cv2.VideoCapture('untitled.mp4')
 
 # Get the input video resolution
 frame_width = int(input_video.get(cv2.CAP_PROP_FRAME_WIDTH))
 frame_height = int(input_video.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
 # Define the output video resolution
-new_frame_width = 640
-new_frame_height = 640
+new_frame_width = 752
+new_frame_height = 480
 
 # Create an output video writer
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-output_video = cv2.VideoWriter('output_video2.mp4', fourcc, 10, (new_frame_width, new_frame_height))
+output_video = cv2.VideoWriter('video2.mp4', fourcc, 10, (new_frame_width, new_frame_height))
 
 # Loop through the frames of the input video
 while True:
